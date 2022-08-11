@@ -19,16 +19,16 @@ package netdevice
 import (
 	"fmt"
 
+	vdpa "github.com/MangoBoost/govdpa/pkg/kvdpa"
 	"github.com/golang/glog"
-	vdpa "github.com/k8snetworkplumbingwg/govdpa/pkg/kvdpa"
 	pluginapi "k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1"
 
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/utils"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/utils"
 )
 
-/*vdpaTypeToDriver translates vdpaTypes (as specified in the netDevice selectors)
-  to vdpa bus drivers*/
+// vdpaTypeToDriver translates vdpaTypes (as specified in the netDevice selectors)
+// to vdpa bus drivers
 var supportedVdpaTypes = map[types.VdpaType]string{
 	types.VdpaVirtioType: vdpa.VirtioVdpaDriver,
 	types.VdpaVhostType:  vdpa.VhostVdpaDriver,

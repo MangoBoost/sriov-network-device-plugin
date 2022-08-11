@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	kvdpa "github.com/k8snetworkplumbingwg/govdpa/pkg/kvdpa"
+	kvdpa "github.com/MangoBoost/govdpa/pkg/kvdpa"
 	mock "github.com/stretchr/testify/mock"
 )
 

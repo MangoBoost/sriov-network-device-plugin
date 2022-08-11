@@ -22,8 +22,8 @@ import (
 	nettypes "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/v1"
 	pluginapi "k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1"
 
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/resources"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/resources"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types"
 )
 
 type netResourcePool struct {
@@ -69,7 +69,7 @@ func (rp *netResourcePool) GetDeviceSpecs(deviceIDs []string) []*pluginapi.Devic
 }
 
 // StoreDeviceInfoFile stores the Device Info files according to the
-//  k8snetworkplumbingwg/device-info-spec
+// k8snetworkplumbingwg/device-info-spec
 func (rp *netResourcePool) StoreDeviceInfoFile(resourceNamePrefix string) error {
 	var devInfo nettypes.DeviceInfo
 	for id, dev := range rp.GetDevicePool() {

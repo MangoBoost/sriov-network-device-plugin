@@ -18,13 +18,11 @@ import (
 	"github.com/golang/glog"
 	pluginapi "k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1"
 
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/utils"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/utils"
 )
 
-/*
-   vfioInfoProvider implements DeviceInfoProvider
-*/
+// vfioInfoProvider implements DeviceInfoProvider
 type vfioInfoProvider struct {
 	pciAddr   string
 	vfioMount string
