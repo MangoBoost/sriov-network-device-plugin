@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	nl "github.com/vishvananda/netlink"
 
-	mocks "github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/utils/mocks"
+	mocks "github.com/MangoBoost/sriov-network-device-plugin/pkg/utils/mocks"
 )
 
 func assertShouldFail(err error, shouldFail bool) {

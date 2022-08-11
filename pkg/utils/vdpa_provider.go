@@ -1,7 +1,7 @@
 package utils
 
 import (
-	vdpa "github.com/k8snetworkplumbingwg/govdpa/pkg/kvdpa"
+	vdpa "github.com/MangoBoost/govdpa/pkg/kvdpa"
 )
 
 // VdpaProvider is a wrapper type over go-vdpa library

@@ -19,11 +19,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/factory"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/netdevice"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types/mocks"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/utils"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/factory"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/netdevice"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types/mocks"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/utils"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"

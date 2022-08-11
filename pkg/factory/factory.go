@@ -20,10 +20,10 @@ import (
 
 	"github.com/golang/glog"
 
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/accelerator"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/netdevice"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/resources"
-	"github.com/k8snetworkplumbingwg/sriov-network-device-plugin/pkg/types"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/accelerator"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/netdevice"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/resources"
+	"github.com/MangoBoost/sriov-network-device-plugin/pkg/types"
 )
 
 type resourceFactory struct {
